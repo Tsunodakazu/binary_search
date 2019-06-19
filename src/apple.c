@@ -19,13 +19,12 @@ int main(){
     scanf("%d", &A[i]);
   }
 lb = 0;
- ub = 1e9 + 1;
+ ub = 1e9;
  while(ub - lb > 1){
   int m =  (ub + lb) / 2;
 if(p(m)) ub = m;
 else lb = m;
   }
    printf("%d\n",ub);
-
   return 0;
 }
